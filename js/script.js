@@ -64,18 +64,21 @@ const quotes = [
 ];
 
 console.log(quotes);
-
 /***
  * `getRandomQuote` function
 ***/
 
+function getRandomQuote() {
+  let i = Math.floor(Math.random() * quotes.length); 
+  return quotes[i];
+}
 
 
 /***
  * `printQuote` function
 ***/
 
-
+function printQuote
 
 /***
  * click event listener for the print quote button
