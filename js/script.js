@@ -11,7 +11,59 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 
+const quotes = [
+  {
+    quote: '“If we knew what it was we were doing, it would not be called research, would it?”',
+    source: 'Albert Einstein'
+  },
+  {
+    quote: '“We are all one. Only egos, beliefs, and fears separate us.“',
+    source: 'Nikola Tesla'
+  },
+  {
+    quote: '“If you want to find the secrets of the universe, think in terms of energy, frequency, and vibration.“',
+    source: 'Nikola Tesla'
+  },
+  {
+    quote: '“Life would be tragic if it weren\'t funny.”',
+    source: 'Stephen Hawking'
+  },
+  {
+    quote: '“The only thing we have to believe in is the unimaginable.”',
+    source: 'Hilma af Klint'
+  },
+  {
+    quote: '“Even the smallest stars shine brightly in the darkest night.”',
+    source: 'Knut Lundmark'
+  },
+  {
+    quote: '“Somewhere, something incredible is waiting to be known.”',
+    source: 'Carl Sagan',
+    citation: 'Cosmos',
+    year: 1980
+  },
+  {
+    quote: '“Good ideas are always crazy until they\'re not.”',
+    source: 'Ashlee Vance',
+    citation: 'Elon Musk: How the Billionaire CEO of SpaceX and Tesla is Shaping our Future',
+    year: 2015
+  },
+  {
+    quote: '“First, solve the problem. Then, write the code.”',
+    source: 'John Johnson',
+    citation: 'Programming Pearls',
+    year: 1986
+  },
+  {
+    quote: '“Simplicity is the soul of efficiency.”',
+    source: 'Austin Freeman',
+    citation: 'The Singing Bone',
+    year: 1912
+  }
 
+];
+
+console.log(quotes);
 
 /***
  * `getRandomQuote` function
