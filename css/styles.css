@@ -100,7 +100,9 @@ h1 {
 .source:before {
   content: "—";
 }
-
+.tags {
+  font-size: 0.7rem;
+}
 .citation {
   font-style: italic;
 }
@@ -162,5 +164,8 @@ h1 {
 
   .source {
     font-size: 1.25rem;
+  }
+  .tags {
+    font-size: 0.9rem;
   }
 }

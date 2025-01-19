@@ -4,21 +4,22 @@ const quotes = [
   {
     quote: 'If we knew what it was we were doing, it would not be called research, would it?',
     source: 'Albert Einstein',
-    tags: ["humor", "science", "curiosity"]
+    tags: ['#humor', '#science', '#curiosity']
   },
   {
     quote: 'We are all one. Only egos, beliefs, and fears separate us.',
     source: 'Nikola Tesla',
-    tags: 'unity'
+    tags: ['#philosophy', '#unity']
   },
   {
     quote: 'If you want to find the secrets of the universe, think in terms of energy, frequency, and vibration.',
     source: 'Nikola Tesla',
-    tags: 'science'
+    tags: ["#science", "#innovation", "#physics"]
   },
   {
     quote: 'Life would be tragic if it weren\'t funny.',
-    source: 'Stephen Hawking'
+    source: 'Stephen Hawking',
+    tags: ['#life']
   },
   {
     quote: 'The only thing we have to believe in is the unimaginable.',
@@ -77,6 +78,9 @@ function printQuote() {
   }
   if(randomQuote.year) {
     print += `<span class="year">${randomQuote.year}</span>`
+  }
+  if(randomQuote.tags) {
+    print += `<span class="tags">${randomQuote.tags.join(" ")}</span>`
   }
   print += `</p>`;
   document.getElementById('quote-box').innerHTML = print; 
