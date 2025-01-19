@@ -64,8 +64,23 @@ function getRandomQuote() {
   return quotes[i];
 }
 
+// function to create a random hex color
 
-// printing quotes
+function randomColor () {
+  const hexValues = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+  let hexColor = '';
+  for (let i=0; i < 6; i++) {
+    let hexValuesIndex = Math.floor(Math.random() * hexValues.length);
+    hexColor += hexValues[hexValuesIndex];
+  }
+  return hexColor;
+}
+
+/***
+ * printing quotes
+ * change background
+***/
+
 
 function printQuote() {
   let randomQuote = getRandomQuote();
@@ -84,6 +99,7 @@ function printQuote() {
   }
   print += `</p>`;
   document.getElementById('quote-box').innerHTML = print; 
+  document.getElementsByTagName('body')[0].style.background = '#' + randomColor();
 }
 
 
