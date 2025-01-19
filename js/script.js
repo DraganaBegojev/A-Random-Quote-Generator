@@ -3,15 +3,18 @@
 const quotes = [
   {
     quote: 'If we knew what it was we were doing, it would not be called research, would it?',
-    source: 'Albert Einstein'
+    source: 'Albert Einstein',
+    tags: ["humor", "science", "curiosity"]
   },
   {
     quote: 'We are all one. Only egos, beliefs, and fears separate us.',
-    source: 'Nikola Tesla'
+    source: 'Nikola Tesla',
+    tags: 'unity'
   },
   {
     quote: 'If you want to find the secrets of the universe, think in terms of energy, frequency, and vibration.',
-    source: 'Nikola Tesla'
+    source: 'Nikola Tesla',
+    tags: 'science'
   },
   {
     quote: 'Life would be tragic if it weren\'t funny.',
@@ -93,3 +96,4 @@ document.getElementById('load-quote').addEventListener("click", printQuote, fals
 ***/
 
 setInterval(printQuote, 10000);
+
