@@ -45,7 +45,8 @@ const quotes = [
     quote: 'First, solve the problem. Then, write the code.',
     source: 'John Johnson',
     citation: 'Programming Pearls',
-    year: 1986
+    year: 1986,
+    tags: ['#programming']
   },
   {
     quote: 'Simplicity is the soul of efficiency.',

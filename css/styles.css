@@ -103,6 +103,11 @@ h1 {
 .tags {
   font-size: 0.7rem;
 }
+.tags::before {
+  content: " ";
+  font-style: italic;
+}
+
 .citation {
   font-style: italic;
 }
